@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.widget.Button
+        android:id="@+id/btn_get"
+        android:layout_width="260dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/btn_clickeffect"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:text="의약품\n데이터\n검색하러가기"
+        android:textAlignment="center"
+        android:textColor="#CD164781"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btn_rank"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="415dp"
+        android:background="@drawable/btn_clickeffect"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:text="검색 순위 보러가기"
+        android:textAlignment="center"
+        android:textColor="#CD164781"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/btn_get"
+        app:layout_constraintTop_toTopOf="@id/btn_get" />
+
+</FrameLayout>
