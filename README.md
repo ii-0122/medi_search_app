@@ -8,6 +8,6 @@
            https://www.data.go.kr/data/15075057/openapi.do
            
  
->참고사항:\
+>참고사항:
 >>Test1\app\src\main\java\com\example\test1  에 주요 코드가 존재합니다. \
 >Test1\app\src\main\AndroidManifest.xml 패키지 구성 요소와 권한 설정 정보 관련 파일입니다.
