@@ -62,10 +62,10 @@ class SearchActivity : AppCompatActivity() {
     inner class NetworkThread: Thread(){    // 여기 구현해야 함
         override fun run(){
             // 인증키 값
-            val key = "C4ZFZEuQBYMardwrAg1zD4wxPrlne5OJjEPDEOzUOb73m8RLVW2z1sMjlHnFK4tzRciK19JK3BW%2FnHIMZDwNzw%3D%3D"
+            val key = ${API_KEY}
             val type ="&type=json"
 
-            val site = "http://apis.data.go.kr/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList?serviceKey="+key+itemName+type
+            val site = "http://apis.data.go.kr/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList?serviceKey="+ key + itemName + type
             val url = URL(site)
             val conn = url.openConnection()
             val input = conn.getInputStream()
