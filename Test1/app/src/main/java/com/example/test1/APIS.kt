@@ -13,7 +13,7 @@ import retrofit2.http.Headers
 import retrofit2.http.POST
 
 interface APIS {
-    // 개인 IP-Database 연결
+    // Database 연결
 
     @Headers("accept: application/json",
         "content-type: application/json")
@@ -29,7 +29,7 @@ interface APIS {
 
 
     companion object { // static 처럼 공유객체로 사용가능함. 모든 인스턴스가 공유하는 객체로서 동작함.
-        private const val BASE_URL = "http://175.126.4.228:80/" // 주소
+        private const val BASE_URL = ${DB_URL} // 주소
 
         fun create(): APIS {
             val gson:Gson = GsonBuilder()
